@@ -1537,6 +1537,171 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:Polyfuse"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "F"
+				(at -2.54 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Polyfuse"
+				(at 2.54 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 1.27 -5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Resettable fuse, polymeric positive temperature coefficient"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "resettable fuse PTC PPTC polyfuse polyswitch"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "*polyfuse* *PTC*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Polyfuse_0_1"
+				(polyline
+					(pts
+						(xy -1.524 2.54) (xy -1.524 1.524) (xy 1.524 -1.524) (xy 1.524 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -0.762 2.54)
+					(end 0.762 -2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Polyfuse_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:R_US"
 			(pin_numbers
 				(hide yes)
@@ -2884,7 +3049,7 @@
 	)
 	(text "LED voltage input\n(5V - 24V)"
 		(exclude_from_sim no)
-		(at 55.88 92.964 0)
+		(at 40.64 92.964 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2893,7 +3058,7 @@
 		)
 		(uuid "23ee2e59-8ce1-48e6-bcdc-ec40626cce58")
 	)
-	(text "The 3V3_GPIO1 connector exists as a \"tap\"\noff the 3V3 GPIO pins that are used for\nthe LED data in case you want to use them\nfor some other purpose besides driving\nLEDs"
+	(text "The GPIO_TAP1 connector exists as a \"tap\"\noff the 3V3 GPIO pins that are used for\nthe LED data in case you want to use them\nfor some other purpose besides driving\nLEDs"
 		(exclude_from_sim no)
 		(at 21.336 122.428 0)
 		(effects
@@ -3029,12 +3194,6 @@
 		(uuid "d7645d96-be04-4b26-8915-0e5fca4a4ede")
 	)
 	(junction
-		(at 73.66 90.17)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0940a82f-3afc-4abf-82d6-3e3f60a6cb45")
-	)
-	(junction
 		(at 63.5 144.78)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3053,16 +3212,22 @@
 		(uuid "1a434b53-ba4d-4ee2-8e33-60815e9db115")
 	)
 	(junction
-		(at 109.22 177.8)
+		(at 72.39 90.17)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "211f3ee4-67ee-43a9-9729-20532c6c1608")
+		(uuid "212b6085-21cc-415d-b6f5-3e2d152c5b92")
 	)
 	(junction
 		(at 68.58 162.56)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "23faaf78-0618-487a-b3b2-9507894b28e1")
+	)
+	(junction
+		(at 77.47 90.17)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "24827ddc-5fb0-4f53-952c-a325a48ebaf3")
 	)
 	(junction
 		(at 66.04 147.32)
@@ -3077,10 +3242,10 @@
 		(uuid "34eba096-c22e-428e-9d08-ddf7f3627fab")
 	)
 	(junction
-		(at 80.01 90.17)
+		(at 109.22 177.8)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "4163dac6-0845-4771-a46a-57bf3b489ac3")
+		(uuid "3d4e0b7a-3945-466f-b90c-96796d9de0b6")
 	)
 	(junction
 		(at 119.38 90.17)
@@ -3095,22 +3260,22 @@
 		(uuid "489a4447-831f-45f7-9dca-6103efc58838")
 	)
 	(junction
-		(at 82.55 90.17)
+		(at 82.55 97.79)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "84c9354c-8b31-4c42-9b81-69f2e923588a")
-	)
-	(junction
-		(at 69.85 97.79)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a193a701-389b-4ba7-9a73-2027c38915a6")
+		(uuid "986847ef-7f36-4acf-9a22-9a23adb077cd")
 	)
 	(junction
 		(at 215.9 73.66)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a4068728-7ee2-4397-813f-8736a9c04236")
+	)
+	(junction
+		(at 82.55 90.17)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a99e9bd0-103b-4bfd-b390-950f9c765bc1")
 	)
 	(junction
 		(at 218.44 148.59)
@@ -3131,7 +3296,7 @@
 		(uuid "b53be742-db05-4257-a3c9-fb9686bb2a84")
 	)
 	(junction
-		(at 124.46 177.8)
+		(at 129.54 177.8)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b9a5e0c1-6f51-420d-a078-912e4c03f04a")
@@ -3167,25 +3332,19 @@
 		(uuid "dca3ecee-728b-4234-82a4-7c01c10cd5ac")
 	)
 	(junction
-		(at 224.79 73.66)
+		(at 54.61 97.79)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "ddda558e-bfd2-4720-8c71-3e602a3755b1")
+		(uuid "dec8a2d0-5f2c-4c9e-994c-f3942681cace")
 	)
 	(junction
-		(at 124.46 158.75)
+		(at 129.54 158.75)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e2d61e31-196b-44dd-ad43-bad658a53703")
 	)
 	(junction
-		(at 82.55 97.79)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e7c37104-3119-4e27-9d36-f5abee47a6b8")
-	)
-	(junction
-		(at 119.38 128.27)
+		(at 124.46 128.27)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fefbbf90-39fd-4eca-9878-61ea50a1c2c8")
@@ -3195,7 +3354,7 @@
 		(uuid "7de8ef4d-0a6b-4470-ac1b-dfe2d7cec61d")
 	)
 	(no_connect
-		(at 69.85 92.71)
+		(at 54.61 92.71)
 		(uuid "cdde981b-56c8-46d4-9e1b-8dfbdb6b982e")
 	)
 	(wire
@@ -3210,16 +3369,6 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 142.24) (xy 114.3 142.24)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "08b38e37-e797-471a-a33d-9e8c8c115c5f")
-	)
-	(wire
-		(pts
 			(xy 53.34 177.8) (xy 60.96 177.8)
 		)
 		(stroke
@@ -3230,7 +3379,7 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 142.24) (xy 114.3 130.81)
+			(xy 119.38 142.24) (xy 119.38 130.81)
 		)
 		(stroke
 			(width 0)
@@ -3250,7 +3399,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 133.35) (xy 124.46 133.35)
+			(xy 132.08 133.35) (xy 129.54 133.35)
 		)
 		(stroke
 			(width 0)
@@ -3287,6 +3436,16 @@
 			(type default)
 		)
 		(uuid "1e2dd129-545a-48bb-acdf-bbb2675d114c")
+	)
+	(wire
+		(pts
+			(xy 116.84 144.78) (xy 119.38 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "22ecdb9b-e720-430f-8df3-5f6174aefbb6")
 	)
 	(wire
 		(pts
@@ -3340,16 +3499,6 @@
 	)
 	(wire
 		(pts
-			(xy 233.68 73.66) (xy 233.68 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "33291121-1b47-4f03-98a2-aa20ec084841")
-	)
-	(wire
-		(pts
 			(xy 209.55 27.94) (xy 209.55 33.02)
 		)
 		(stroke
@@ -3360,7 +3509,7 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 87.63) (xy 73.66 90.17)
+			(xy 72.39 87.63) (xy 72.39 90.17)
 		)
 		(stroke
 			(width 0)
@@ -3390,17 +3539,7 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 97.79) (xy 82.55 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "43c6fbd2-711e-47ba-a7f4-c717add1c635")
-	)
-	(wire
-		(pts
-			(xy 69.85 100.33) (xy 69.85 97.79)
+			(xy 54.61 100.33) (xy 54.61 97.79)
 		)
 		(stroke
 			(width 0)
@@ -3490,7 +3629,7 @@
 	)
 	(wire
 		(pts
-			(xy 124.46 158.75) (xy 124.46 177.8)
+			(xy 129.54 158.75) (xy 129.54 177.8)
 		)
 		(stroke
 			(width 0)
@@ -3540,7 +3679,7 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 128.27) (xy 119.38 125.73)
+			(xy 124.46 128.27) (xy 124.46 125.73)
 		)
 		(stroke
 			(width 0)
@@ -3590,7 +3729,7 @@
 	)
 	(wire
 		(pts
-			(xy 124.46 177.8) (xy 124.46 180.34)
+			(xy 129.54 177.8) (xy 129.54 180.34)
 		)
 		(stroke
 			(width 0)
@@ -3610,7 +3749,7 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 153.67) (xy 119.38 128.27)
+			(xy 124.46 153.67) (xy 124.46 128.27)
 		)
 		(stroke
 			(width 0)
@@ -3640,17 +3779,7 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 90.17) (xy 82.55 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "74ca6e1f-bada-474a-9305-7debec48b753")
-	)
-	(wire
-		(pts
-			(xy 124.46 158.75) (xy 128.27 158.75)
+			(xy 129.54 158.75) (xy 133.35 158.75)
 		)
 		(stroke
 			(width 0)
@@ -3670,13 +3799,13 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 144.78) (xy 114.3 144.78)
+			(xy 67.31 90.17) (xy 72.39 90.17)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "7f1b1c76-c284-4aea-a7ca-655b0571cb42")
+		(uuid "7f1f5f81-1436-4858-9637-33169a6928bd")
 	)
 	(wire
 		(pts
@@ -3710,7 +3839,7 @@
 	)
 	(wire
 		(pts
-			(xy 124.46 133.35) (xy 124.46 158.75)
+			(xy 129.54 133.35) (xy 129.54 158.75)
 		)
 		(stroke
 			(width 0)
@@ -3770,7 +3899,7 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 156.21) (xy 128.27 156.21)
+			(xy 119.38 156.21) (xy 133.35 156.21)
 		)
 		(stroke
 			(width 0)
@@ -3790,7 +3919,7 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 128.27) (xy 127 128.27)
+			(xy 124.46 128.27) (xy 132.08 128.27)
 		)
 		(stroke
 			(width 0)
@@ -3807,6 +3936,16 @@
 			(type default)
 		)
 		(uuid "a0e5e753-abad-4880-95d3-d6f850194fb6")
+	)
+	(wire
+		(pts
+			(xy 116.84 142.24) (xy 119.38 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aea3b43d-3956-4093-8a3c-89099c152d61")
 	)
 	(wire
 		(pts
@@ -3830,7 +3969,7 @@
 	)
 	(wire
 		(pts
-			(xy 128.27 153.67) (xy 119.38 153.67)
+			(xy 133.35 153.67) (xy 124.46 153.67)
 		)
 		(stroke
 			(width 0)
@@ -3847,16 +3986,6 @@
 			(type default)
 		)
 		(uuid "b9392f76-e081-456a-ac42-77d95aee8c1a")
-	)
-	(wire
-		(pts
-			(xy 224.79 73.66) (xy 233.68 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bcf62193-225a-4c48-b2f7-fd7691ab6b3a")
 	)
 	(wire
 		(pts
@@ -3900,7 +4029,7 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 130.81) (xy 127 130.81)
+			(xy 119.38 130.81) (xy 132.08 130.81)
 		)
 		(stroke
 			(width 0)
@@ -3920,7 +4049,7 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 90.17) (xy 80.01 90.17)
+			(xy 72.39 90.17) (xy 77.47 90.17)
 		)
 		(stroke
 			(width 0)
@@ -3950,7 +4079,7 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 97.79) (xy 69.85 95.25)
+			(xy 54.61 97.79) (xy 54.61 95.25)
 		)
 		(stroke
 			(width 0)
@@ -3970,7 +4099,7 @@
 	)
 	(wire
 		(pts
-			(xy 124.46 177.8) (xy 109.22 177.8)
+			(xy 129.54 177.8) (xy 109.22 177.8)
 		)
 		(stroke
 			(width 0)
@@ -3990,7 +4119,7 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 144.78) (xy 114.3 156.21)
+			(xy 119.38 144.78) (xy 119.38 156.21)
 		)
 		(stroke
 			(width 0)
@@ -4000,7 +4129,7 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 90.17) (xy 73.66 90.17)
+			(xy 54.61 90.17) (xy 59.69 90.17)
 		)
 		(stroke
 			(width 0)
@@ -4037,6 +4166,26 @@
 			(type default)
 		)
 		(uuid "f30e630d-022c-47da-b670-574d36666b27")
+	)
+	(wire
+		(pts
+			(xy 54.61 97.79) (xy 82.55 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fa83baa3-1178-498e-a5e6-b531829bcc88")
+	)
+	(wire
+		(pts
+			(xy 77.47 90.17) (xy 82.55 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fa929593-71d0-4e99-b40e-1d192ab6306d")
 	)
 	(wire
 		(pts
@@ -4540,7 +4689,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "10fa02f3-4264-424c-b55d-531705673df6")
-		(property "Reference" "#PWR019"
+		(property "Reference" "#PWR017"
 			(at 251.46 46.99 0)
 			(hide yes)
 			(show_name no)
@@ -4600,7 +4749,7 @@
 		(instances
 			(project "XIAO_ESP32C6_Control_Board"
 				(path "/ecb65fdc-b071-4c23-a9bf-3c8563095e75"
-					(reference "#PWR019")
+					(reference "#PWR017")
 					(unit 1)
 				)
 			)
@@ -4608,7 +4757,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Barrel_Jack_Switch")
-		(at 62.23 92.71 0)
+		(at 46.99 92.71 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4619,7 +4768,7 @@
 		(fields_autoplaced yes)
 		(uuid "119d6f49-4592-467b-86d5-9717fc5e7c09")
 		(property "Reference" "PWR1"
-			(at 62.23 83.82 0)
+			(at 46.99 83.82 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4629,7 +4778,7 @@
 			)
 		)
 		(property "Value" "Barrel_Jack_Switch"
-			(at 62.23 86.36 0)
+			(at 46.99 86.36 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4639,7 +4788,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 63.5 93.726 0)
+			(at 48.26 93.726 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4650,7 +4799,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 63.5 93.726 0)
+			(at 48.26 93.726 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4661,7 +4810,7 @@
 			)
 		)
 		(property "Description" "DC Barrel Jack with an internal switch"
-			(at 62.23 92.71 0)
+			(at 46.99 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4691,7 +4840,7 @@
 	)
 	(symbol
 		(lib_id "power:VDC")
-		(at 119.38 125.73 0)
+		(at 124.46 125.73 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4701,8 +4850,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "18c126c1-90ee-496a-9a2b-9c6b9d067da0")
-		(property "Reference" "#PWR06"
-			(at 119.38 129.54 0)
+		(property "Reference" "#PWR08"
+			(at 124.46 129.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4713,7 +4862,7 @@
 			)
 		)
 		(property "Value" "VDC"
-			(at 119.38 120.65 0)
+			(at 124.46 120.65 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4723,7 +4872,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 119.38 125.73 0)
+			(at 124.46 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4734,7 +4883,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 119.38 125.73 0)
+			(at 124.46 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4745,7 +4894,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VDC\""
-			(at 119.38 125.73 0)
+			(at 124.46 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4761,7 +4910,7 @@
 		(instances
 			(project "XIAO_ESP32C6_Control_Board"
 				(path "/ecb65fdc-b071-4c23-a9bf-3c8563095e75"
-					(reference "#PWR06")
+					(reference "#PWR08")
 					(unit 1)
 				)
 			)
@@ -4863,7 +5012,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "20bb2f86-6a38-4f9b-846f-68b3765a9b83")
-		(property "Reference" "#PWR010"
+		(property "Reference" "#PWR09"
 			(at 129.54 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -4923,7 +5072,7 @@
 		(instances
 			(project "XIAO_ESP32C6_Control_Board"
 				(path "/ecb65fdc-b071-4c23-a9bf-3c8563095e75"
-					(reference "#PWR010")
+					(reference "#PWR09")
 					(unit 1)
 				)
 			)
@@ -4931,7 +5080,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 69.85 100.33 0)
+		(at 54.61 100.33 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4941,8 +5090,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "235f573a-7e0d-495f-94d8-c04b64edd5f0")
-		(property "Reference" "#PWR03"
-			(at 69.85 106.68 0)
+		(property "Reference" "#PWR02"
+			(at 54.61 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4953,7 +5102,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 69.85 105.41 0)
+			(at 54.61 105.41 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4963,7 +5112,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 69.85 100.33 0)
+			(at 54.61 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4974,7 +5123,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 69.85 100.33 0)
+			(at 54.61 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4985,7 +5134,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 69.85 100.33 0)
+			(at 54.61 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5001,7 +5150,7 @@
 		(instances
 			(project "XIAO_ESP32C6_Control_Board"
 				(path "/ecb65fdc-b071-4c23-a9bf-3c8563095e75"
-					(reference "#PWR03")
+					(reference "#PWR02")
 					(unit 1)
 				)
 			)
@@ -5017,10 +5166,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "2ce163a8-be56-4b3d-9413-16860c7c8618")
-		(property "Reference" "R2"
-			(at 227.33 78.7399 0)
+		(property "Reference" "R4"
+			(at 218.948 78.994 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5031,7 +5179,7 @@
 			)
 		)
 		(property "Value" "4.7k"
-			(at 227.33 81.2799 0)
+			(at 218.948 81.534 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5083,7 +5231,7 @@
 		(instances
 			(project "XIAO_ESP32C6_Control_Board"
 				(path "/ecb65fdc-b071-4c23-a9bf-3c8563095e75"
-					(reference "R2")
+					(reference "R4")
 					(unit 1)
 				)
 			)
@@ -5267,7 +5415,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3b78942c-6b51-4448-825d-707245722d2b")
-		(property "Reference" "#PWR016"
+		(property "Reference" "#PWR013"
 			(at 218.44 157.48 0)
 			(hide yes)
 			(show_name no)
@@ -5327,7 +5475,7 @@
 		(instances
 			(project "XIAO_ESP32C6_Control_Board"
 				(path "/ecb65fdc-b071-4c23-a9bf-3c8563095e75"
-					(reference "#PWR016")
+					(reference "#PWR013")
 					(unit 1)
 				)
 			)
@@ -5538,7 +5686,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "60769e64-2b40-47c4-a39c-a73b4723014e")
-		(property "Reference" "#PWR07"
+		(property "Reference" "#PWR06"
 			(at 115.57 30.48 0)
 			(hide yes)
 			(show_name no)
@@ -5599,7 +5747,7 @@
 		(instances
 			(project "XIAO_ESP32C6_Control_Board"
 				(path "/ecb65fdc-b071-4c23-a9bf-3c8563095e75"
-					(reference "#PWR07")
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)
@@ -5617,7 +5765,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6bd6309e-d278-44ef-8ac0-da51ecb5d7b2")
-		(property "Reference" "#PWR015"
+		(property "Reference" "#PWR014"
 			(at 226.06 127 0)
 			(hide yes)
 			(show_name no)
@@ -5677,7 +5825,7 @@
 		(instances
 			(project "XIAO_ESP32C6_Control_Board"
 				(path "/ecb65fdc-b071-4c23-a9bf-3c8563095e75"
-					(reference "#PWR015")
+					(reference "#PWR014")
 					(unit 1)
 				)
 			)
@@ -5763,7 +5911,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x03")
-		(at 132.08 130.81 0)
+		(at 137.16 130.81 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5774,7 +5922,7 @@
 		(fields_autoplaced yes)
 		(uuid "7a4c2263-5846-4dd6-9396-9b65326a0edb")
 		(property "Reference" "LED1"
-			(at 134.62 129.5399 0)
+			(at 139.7 129.5399 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5785,7 +5933,7 @@
 			)
 		)
 		(property "Value" "Conn_01x03"
-			(at 134.62 132.0799 0)
+			(at 139.7 132.0799 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5796,7 +5944,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 132.08 130.81 0)
+			(at 137.16 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5807,7 +5955,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 132.08 130.81 0)
+			(at 137.16 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5818,7 +5966,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 132.08 130.81 0)
+			(at 137.16 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5841,6 +5989,84 @@
 			(project "XIAO_ESP32C6_Control_Board"
 				(path "/ecb65fdc-b071-4c23-a9bf-3c8563095e75"
 					(reference "LED1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 233.68 83.82 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7ef34fd2-84fe-4187-a3b2-ae1343d7fd72")
+		(property "Reference" "#PWR015"
+			(at 233.68 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V"
+			(at 233.68 78.74 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 233.68 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 233.68 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 233.68 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c93c4800-b8f7-4ae8-9d7f-e9094c438dbc")
+		)
+		(instances
+			(project "XIAO_ESP32C6_Control_Board"
+				(path "/ecb65fdc-b071-4c23-a9bf-3c8563095e75"
+					(reference "#PWR015")
 					(unit 1)
 				)
 			)
@@ -5926,7 +6152,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 124.46 180.34 0)
+		(at 129.54 180.34 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5936,8 +6162,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "97b74442-2f18-4f09-b58d-9ff17b34945e")
-		(property "Reference" "#PWR09"
-			(at 124.46 186.69 0)
+		(property "Reference" "#PWR010"
+			(at 129.54 186.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5948,7 +6174,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 124.46 185.42 0)
+			(at 129.54 185.42 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5958,7 +6184,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 124.46 180.34 0)
+			(at 129.54 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5969,7 +6195,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 124.46 180.34 0)
+			(at 129.54 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5980,7 +6206,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 124.46 180.34 0)
+			(at 129.54 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5996,7 +6222,7 @@
 		(instances
 			(project "XIAO_ESP32C6_Control_Board"
 				(path "/ecb65fdc-b071-4c23-a9bf-3c8563095e75"
-					(reference "#PWR09")
+					(reference "#PWR010")
 					(unit 1)
 				)
 			)
@@ -6095,6 +6321,86 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_US")
+		(at 113.03 142.24 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a13015bd-5849-46b1-93aa-07fd974f601c")
+		(property "Reference" "R1"
+			(at 113.03 135.89 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "330"
+			(at 113.03 138.43 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 113.284 141.224 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 113.03 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 113.03 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0c2433a7-cf5a-41ad-8a63-e05b551f83de")
+		)
+		(pin "2"
+			(uuid "d51a7b11-613d-4562-a917-ce08a50fc004")
+		)
+		(instances
+			(project "XIAO_ESP32C6_Control_Board"
+				(path "/ecb65fdc-b071-4c23-a9bf-3c8563095e75"
+					(reference "R1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3V3")
 		(at 96.52 26.67 0)
 		(unit 1)
@@ -6173,6 +6479,85 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_US")
+		(at 113.03 144.78 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a59c5d88-966a-401c-9dd5-445058e8c5c3")
+		(property "Reference" "R2"
+			(at 113.03 148.336 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "330"
+			(at 113.03 150.876 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 112.776 145.796 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 113.03 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 113.03 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "45a195d3-79c8-4fbb-8b82-0f2d7e546df4")
+		)
+		(pin "1"
+			(uuid "ab4cf038-1418-4cbf-b970-f62e509b26db")
+		)
+		(instances
+			(project "XIAO_ESP32C6_Control_Board"
+				(path "/ecb65fdc-b071-4c23-a9bf-3c8563095e75"
+					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3V3")
 		(at 60.96 161.29 0)
 		(unit 1)
@@ -6184,7 +6569,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a9988360-0ec7-4ebd-b4b5-021528af95a5")
-		(property "Reference" "#PWR02"
+		(property "Reference" "#PWR03"
 			(at 60.96 165.1 0)
 			(hide yes)
 			(show_name no)
@@ -6244,7 +6629,7 @@
 		(instances
 			(project "XIAO_ESP32C6_Control_Board"
 				(path "/ecb65fdc-b071-4c23-a9bf-3c8563095e75"
-					(reference "#PWR02")
+					(reference "#PWR03")
 					(unit 1)
 				)
 			)
@@ -6432,7 +6817,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x03")
-		(at 133.35 156.21 0)
+		(at 138.43 156.21 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6443,7 +6828,7 @@
 		(fields_autoplaced yes)
 		(uuid "afbdb4f2-5b10-49fd-ba82-738c47127b9b")
 		(property "Reference" "LED2"
-			(at 135.89 154.9399 0)
+			(at 140.97 154.9399 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6454,7 +6839,7 @@
 			)
 		)
 		(property "Value" "Conn_01x03"
-			(at 135.89 157.4799 0)
+			(at 140.97 157.4799 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6465,7 +6850,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 133.35 156.21 0)
+			(at 138.43 156.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6476,7 +6861,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 133.35 156.21 0)
+			(at 138.43 156.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6487,7 +6872,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 133.35 156.21 0)
+			(at 138.43 156.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6526,7 +6911,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b0819675-1ae0-4358-b578-78439266cdee")
-		(property "Reference" "#FLG01"
+		(property "Reference" "#FLG02"
 			(at 101.6 29.845 0)
 			(hide yes)
 			(show_name no)
@@ -6586,7 +6971,7 @@
 		(instances
 			(project "XIAO_ESP32C6_Control_Board"
 				(path "/ecb65fdc-b071-4c23-a9bf-3c8563095e75"
-					(reference "#FLG01")
+					(reference "#FLG02")
 					(unit 1)
 				)
 			)
@@ -6691,7 +7076,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b41b0802-217f-489e-ac4b-17befa085f93")
-		(property "Reference" "#FLG02"
+		(property "Reference" "#FLG03"
 			(at 119.38 88.265 0)
 			(hide yes)
 			(show_name no)
@@ -6751,7 +7136,7 @@
 		(instances
 			(project "XIAO_ESP32C6_Control_Board"
 				(path "/ecb65fdc-b071-4c23-a9bf-3c8563095e75"
-					(reference "#FLG02")
+					(reference "#FLG03")
 					(unit 1)
 				)
 			)
@@ -6847,7 +7232,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 80.01 90.17 0)
+		(at 77.47 90.17 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6856,8 +7241,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "c806da09-6b0a-4c52-aae5-43356b8b9658")
-		(property "Reference" "#FLG03"
-			(at 80.01 88.265 0)
+		(property "Reference" "#FLG01"
+			(at 77.47 88.265 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6868,7 +7253,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 80.264 86.614 0)
+			(at 80.01 86.614 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6878,7 +7263,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 80.01 90.17 0)
+			(at 77.47 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6889,7 +7274,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 80.01 90.17 0)
+			(at 77.47 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6900,7 +7285,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 80.01 90.17 0)
+			(at 77.47 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6916,7 +7301,7 @@
 		(instances
 			(project "XIAO_ESP32C6_Control_Board"
 				(path "/ecb65fdc-b071-4c23-a9bf-3c8563095e75"
-					(reference "#FLG03")
+					(reference "#FLG01")
 					(unit 1)
 				)
 			)
@@ -6934,7 +7319,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d11da8b4-a1cf-4b4a-9de3-3fc7ae95280d")
-		(property "Reference" "#PWR014"
+		(property "Reference" "#PWR016"
 			(at 233.68 97.79 0)
 			(hide yes)
 			(show_name no)
@@ -6994,7 +7379,7 @@
 		(instances
 			(project "XIAO_ESP32C6_Control_Board"
 				(path "/ecb65fdc-b071-4c23-a9bf-3c8563095e75"
-					(reference "#PWR014")
+					(reference "#PWR016")
 					(unit 1)
 				)
 			)
@@ -7002,7 +7387,7 @@
 	)
 	(symbol
 		(lib_id "power:VDC")
-		(at 73.66 87.63 0)
+		(at 72.39 87.63 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7013,7 +7398,7 @@
 		(fields_autoplaced yes)
 		(uuid "d50e993f-3414-4363-955f-3892f99b9537")
 		(property "Reference" "#PWR04"
-			(at 73.66 91.44 0)
+			(at 72.39 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7024,7 +7409,7 @@
 			)
 		)
 		(property "Value" "VDC"
-			(at 73.66 82.55 0)
+			(at 72.39 82.55 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7034,7 +7419,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 73.66 87.63 0)
+			(at 72.39 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7045,7 +7430,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 73.66 87.63 0)
+			(at 72.39 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7056,7 +7441,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VDC\""
-			(at 73.66 87.63 0)
+			(at 72.39 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7161,6 +7546,87 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:Polyfuse")
+		(at 63.5 90.17 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d766457d-aa8a-490a-8701-43d1476033a8")
+		(property "Reference" "F1"
+			(at 63.5 83.82 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Polyfuse"
+			(at 63.5 86.36 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 68.58 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" ""
+			(at 63.5 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resettable fuse, polymeric positive temperature coefficient"
+			(at 63.5 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "cd7cb495-5462-4c98-8ac3-8a58a3627503")
+		)
+		(pin "2"
+			(uuid "9ed71c1f-fc04-4179-8daf-71d09d71ac68")
+		)
+		(instances
+			(project "XIAO_ESP32C6_Control_Board"
+				(path "/ecb65fdc-b071-4c23-a9bf-3c8563095e75"
+					(reference "F1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector_Generic:Conn_01x02")
 		(at 74.93 125.73 0)
 		(unit 1)
@@ -7171,7 +7637,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "dc4cd393-598e-417d-b40d-9e0d382fa95c")
-		(property "Reference" "3V3_GPIO1"
+		(property "Reference" "GPIO_TAP1"
 			(at 73.406 120.142 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7235,7 +7701,7 @@
 		(instances
 			(project "XIAO_ESP32C6_Control_Board"
 				(path "/ecb65fdc-b071-4c23-a9bf-3c8563095e75"
-					(reference "3V3_GPIO1")
+					(reference "GPIO_TAP1")
 					(unit 1)
 				)
 			)
@@ -7251,10 +7717,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "df45b177-ebff-46b9-8543-85ab8e37bc13")
-		(property "Reference" "R1"
-			(at 218.44 78.7399 0)
+		(property "Reference" "R3"
+			(at 210.058 78.994 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7265,7 +7730,7 @@
 			)
 		)
 		(property "Value" "4.7k"
-			(at 218.44 81.2799 0)
+			(at 210.058 81.534 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7317,7 +7782,7 @@
 		(instances
 			(project "XIAO_ESP32C6_Control_Board"
 				(path "/ecb65fdc-b071-4c23-a9bf-3c8563095e75"
-					(reference "R1")
+					(reference "R3")
 					(unit 1)
 				)
 			)
@@ -7334,7 +7799,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e8ae0d78-5c9f-4275-83ba-abfa8cf3b4d0")
-		(property "Reference" "#PWR08"
+		(property "Reference" "#PWR07"
 			(at 109.22 29.21 0)
 			(hide yes)
 			(show_name no)
@@ -7395,7 +7860,7 @@
 		(instances
 			(project "XIAO_ESP32C6_Control_Board"
 				(path "/ecb65fdc-b071-4c23-a9bf-3c8563095e75"
-					(reference "#PWR08")
+					(reference "#PWR07")
 					(unit 1)
 				)
 			)

@@ -429,7 +429,7 @@
         "uuid": "ecb65fdc-b071-4c23-a9bf-3c8563095e75"
       }
     ],
-    "used_designators": "PWR1,UART1-2,J1-2,#FLG1-3,BUCK1,C1-4,SPI1,I2C1,3V3_GPIO1,R1-2,JP1-3,LED1-2,#PWR1-20,XIAO_R1,U1,JST_UART1,XIAO_L1",
+    "used_designators": "GPIO_TAP1,F1,LED1-2,JP1-3,R1-4,3V3_GPIO1,XIAO_L1,#FLG1-3,JST_UART1,U1,XIAO_R1,#PWR1-20,PWR1,UART1-2,J1-2,BUCK1,C1-4,SPI1,I2C1",
     "variants": []
   },
   "sheets": [

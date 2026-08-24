@@ -1,2 +1,5 @@
 # Folders
 *-backups/
+
+# Files
+*.lck
