@@ -52,8 +52,8 @@
         "zones": {
           "border_display_style": 2,
           "border_hatch_pitch": 0.5,
-          "corner_radius": 0.0,
-          "corner_smoothing": 0,
+          "corner_radius": 1.0,
+          "corner_smoothing": 2,
           "fill_mode": 0,
           "hatch_gap": 1.5,
           "hatch_orientation": 0.0,
@@ -63,13 +63,19 @@
           "min_clearance": 0.5,
           "min_island_area": 10.0,
           "min_thickness": 0.25,
-          "pad_connection": 1,
+          "pad_connection": 2,
           "remove_islands": 0,
           "thermal_relief_gap": 0.5,
           "thermal_relief_spoke_width": 0.5
         }
       },
-      "diff_pair_dimensions": [],
+      "diff_pair_dimensions": [
+        {
+          "gap": 0.0,
+          "via_gap": 0.0,
+          "width": 0.0
+        }
+      ],
       "drc_exclusions": [],
       "meta": {
         "version": 2
@@ -203,7 +209,13 @@
           "td_width_to_size_filter_ratio": 0.9
         }
       ],
-      "track_widths": [],
+      "track_widths": [
+        0.0,
+        0.254,
+        0.508,
+        0.762,
+        1.27
+      ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
           "corner_radius_percentage": 80,
@@ -230,7 +242,12 @@
           "spacing": 0.6
         }
       },
-      "via_dimensions": [],
+      "via_dimensions": [
+        {
+          "diameter": 0.0,
+          "drill": 0.0
+        }
+      ],
       "zones_allow_external_fillets": false
     },
     "ipc2581": {
@@ -685,7 +702,7 @@
         "uuid": "ecb65fdc-b071-4c23-a9bf-3c8563095e75"
       }
     ],
-    "used_designators": "R1-4,LED1-2,JP1-3,3V3_GPIO1,XIAO_L1,#FLG1-3,#PWR1-20,J1-2,UART1-2,PWR1,GPIO_TAP1,XIAO_R1,F1,U1,JST_UART1,BUCK1,I2C1,SPI1,C1-4",
+    "used_designators": "F1,XIAO_R1,GPIO_TAP1,J1-2,UART1-2,PWR1,C1-5,SPI1,I2C1,BUCK1,JST_UART1,U1,R1-4,LED1-2,JP1-3,3V3_GPIO1,XIAO_L1,#FLG1-3,#PWR1-22",
     "variants": []
   },
   "sheets": [
