@@ -7226,7 +7226,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "aea646a3-7abb-4f8b-b3af-2188ee9cb1f4")
-		(property "Reference" "JP1"
+		(property "Reference" "MCU_PWR1"
 			(at 101.6 83.82 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7288,7 +7288,7 @@
 		(instances
 			(project "XIAO_ESP32C6_Control_Board"
 				(path "/ecb65fdc-b071-4c23-a9bf-3c8563095e75"
-					(reference "JP1")
+					(reference "MCU_PWR1")
 					(unit 1)
 				)
 			)
