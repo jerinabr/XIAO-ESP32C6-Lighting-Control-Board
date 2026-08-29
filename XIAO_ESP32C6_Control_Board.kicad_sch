@@ -6661,8 +6661,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1u"
-			(at 119.634 33.274 0)
+		(property "Value" "1u"
+			(at 121.412 33.274 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects

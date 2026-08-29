@@ -2005,7 +2005,7 @@
 				)
 			)
 		)
-		(property "Value" "0.1u"
+		(property "Value" "1u"
 			(at 0 1.43 90)
 			(layer "F.Fab")
 			(uuid "1ae879a9-b208-4fa3-8670-d33edaa90aec")
@@ -6043,8 +6043,8 @@
 		(uuid "b3c3ebb5-12f2-45bb-90d5-29cde6371478")
 	)
 	(gr_rect
-		(start 135.382 53.086)
-		(end 139.446 71.12)
+		(start 135.382 52.578)
+		(end 139.446 70.358)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -6185,7 +6185,7 @@
 		)
 	)
 	(gr_text "MOSI"
-		(at 143.764 62.23 0)
+		(at 143.764 61.468 0)
 		(layer "B.SilkS")
 		(uuid "c69a429a-1b57-4219-bd2b-d233addc1ec7")
 		(effects
@@ -6198,7 +6198,7 @@
 		)
 	)
 	(gr_text "MISO"
-		(at 143.764 64.77 0)
+		(at 143.764 64.008 0)
 		(layer "B.SilkS")
 		(uuid "0cbe4605-07e3-4809-a580-2fa23445a48f")
 		(effects
@@ -6211,7 +6211,7 @@
 		)
 	)
 	(gr_text "SCK"
-		(at 143.764 67.31 0)
+		(at 143.764 66.548 0)
 		(layer "B.SilkS")
 		(uuid "6caf44a2-421b-4eb2-a7b6-2916fe6c229d")
 		(effects
@@ -6224,7 +6224,7 @@
 		)
 	)
 	(gr_text "CS"
-		(at 143.764 69.85 0)
+		(at 143.764 69.088 0)
 		(layer "B.SilkS")
 		(uuid "a20c7477-587e-4420-b83f-939a70aeb3ee")
 		(effects
@@ -6263,7 +6263,7 @@
 		)
 	)
 	(gr_text "SDA"
-		(at 131.064 59.69 0)
+		(at 131.064 58.928 0)
 		(layer "B.SilkS")
 		(uuid "75459630-26c6-49be-9fae-ee3eee12bf61")
 		(effects
@@ -6276,7 +6276,7 @@
 		)
 	)
 	(gr_text "SCL"
-		(at 131.064 62.23 0)
+		(at 131.064 61.468 0)
 		(layer "B.SilkS")
 		(uuid "0e1d107f-4c4a-4fe8-aa3a-7f05564cf8c4")
 		(effects
@@ -6289,7 +6289,7 @@
 		)
 	)
 	(gr_text "UART"
-		(at 131.064 64.77 0)
+		(at 131.064 64.008 0)
 		(layer "B.SilkS")
 		(uuid "94230b4c-aabb-4820-9ccd-f765536c8856")
 		(effects
@@ -6302,7 +6302,7 @@
 		)
 	)
 	(gr_text "UART"
-		(at 131.064 67.31 0)
+		(at 131.064 66.548 0)
 		(layer "B.SilkS")
 		(uuid "612e0a18-f8f1-48fb-aaf9-12604d9c462d")
 		(effects
@@ -6406,7 +6406,7 @@
 		)
 	)
 	(gr_text "XIAO ESP32C6\nCTRL BOARD V1.0"
-		(at 137.414 68.834 270)
+		(at 137.414 68.072 270)
 		(layer "B.SilkS")
 		(uuid "41c4d63a-4544-4a7a-a12a-c3aea775e143")
 		(effects
